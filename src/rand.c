@@ -50,7 +50,7 @@ int main(int argc, char * argv[])
 
     printf("Writing %u bytes to '%s'\n", numBytes, szOutputFileName);
 
-    fptrRand = fopen("/dev/urandom", "rb");
+    fptrRand = fopen("/dev/random", "rb");
 
     if (fptrRand == NULL) {
         printf("FATAL: Failed to open random device\n\n");
